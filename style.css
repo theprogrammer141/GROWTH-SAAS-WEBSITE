@@ -87,6 +87,10 @@ img {
   margin-bottom: 20px;
 }
 
+.hero-buttons a i {
+  padding-right: 10px;
+}
+
 /* Video */
 .video {
   padding: 10px 0 40px;
@@ -211,12 +215,15 @@ img {
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .faq ul.faq-menu li.active {
   background: var(--primary-color);
   color: #fff;
 }
+
+/* Footer */
 
 .footer {
   padding: 40px 0;
