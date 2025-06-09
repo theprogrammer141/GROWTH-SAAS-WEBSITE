@@ -92,4 +92,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     mobileMenu.classList.remove("active");
   });
+
+  // Login form validation
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
+  const loginButton = document.querySelector("button");
+
+  loginButton.addEventListener("click", () => {
+    event.preventDefault();
+
+    if (email.value.trim() === "" || password.value.trim() === "") {
+      alert("Please enter valid email and password!");
+    } else {
+      alert("User logged In!");
+    }
+  });
+});
+
+// Login Page
+document.addEventListener("DOMContentLoaded", () => {
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
+  const loginButton = document.querySelector("button");
+
+  loginButton.addEventListener("click", () => {
+    event.preventDefault();
+
+    if (email.value.trim() === "" || password.value.trim() === "") {
+      alert("Please enter valid email and password!");
+    } else {
+      alert("User logged In!");
+    }
+  });
 });
