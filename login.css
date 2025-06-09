@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .login-form {
@@ -14,6 +15,7 @@
   border-radius: 20px;
   text-align: center;
   box-shadow: 0px 4px 17px -1px rgba(0, 0, 0, 0.75);
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .login-form .form-group {
@@ -21,10 +23,12 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .form-group label {
   padding: 10px;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .form-group input {
@@ -33,6 +37,7 @@
   border: none;
   border-radius: 10px;
   opacity: 0.8;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .form-group input:focus {
@@ -42,15 +47,32 @@
 
 .form-group h4 {
   margin-top: 10px;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .form-group i {
   padding-right: 5px;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* Media Queries */
 @media all and (max-width: 500px) {
   .login-form {
     padding: 40px;
+  }
+}
+
+/* Keyframes */
+
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
   }
 }
